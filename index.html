@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat TOPITECH</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <aside>
+        <ul id="tabs">
+            <li class="active" data-room="general">➡️ Salle 1</li>
+            <li data-room="entraide">➡️ Salle 2</li>
+            <li data-room="diverses">➡️ Salle 3</li>
+        </ul>
+    </aside>
+    <main>
+        <div id="content">
+            <div id="messages"></div>
+            <div id="writing"></div>
+        </div>
+        <form>
+            <input type="text" id="name" placeholder="Entrez votre nom">
+            <input type="text" id="message" placeholder="Entrez votre message">
+            <button>Envoyer</button>
+        </form>
+    </main>
+    <!--  socket.io.js -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
